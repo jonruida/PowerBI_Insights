@@ -6,7 +6,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 ## Data Extraction Approaches
 
 ### Web Scraping and Interception Approach
-#### Option 1:
+#### Option 1.1:
 ```mermaid
 graph TD;
     B[Run mitmdump];
@@ -25,18 +25,15 @@ graph TD;
   - **Status**: <span style="color:orange">Data format errors</span>
 
 - **Status**: 
-  - <span style="color:orange">In Progress</span>
+  - <span style="color:orange">Discarded</span>
 
 - **Report**:
   - Using Selenium with Firefox browser due to proxy certificate security errors with Chrome.
   - This approach allows for capturing and interacting with web data in a less native manner, providing flexibility in data extraction.
 
-- **Problem-Solving**:
-  - Data extracted but getting diferent formats depending on the PowerBi URL source
-
 ### Data Extraction Approach
 
-#### Option 2:
+#### Option 1.2:
 ```mermaid
 graph TD;
     A[Run mitmdump];
@@ -52,21 +49,14 @@ graph TD;
 - **Technologies/Strategies**:
   - Use mitmproxy to intercept and capture HTTP requests
   - Run a script (`read_dumpfile_to_file.py`) to format the captured data
-  - Use `gzip_readfile` to handle the formatted data
-  - Process the formatted data with custom scripts
+  - Process the formatted data with `gzip_readfile` script
+  - **Status**: <span style="color:orange">Doesn`t recognize GZIP</span>
 
 - **Status**: 
   - <span style="color:green">In Progress</span>
 
 - **Report**:
-  - Implementing a new approach to handle data formatting before processing.
-  - This method aims to address data format inconsistencies and improve overall data extraction reliability.
-
-- **Problem-Solving**:
-  - Transitioning from direct extraction to pre-processing with a formatting script to handle varying data formats more effectively.
-
-
-
+  - Improves the Option 1 by standarrdizing the format, still has some issues uncompressing GZIP due to single \ being recognized as double\\.
 
 ### Native API Connectivity Approach
 
@@ -91,8 +81,6 @@ graph TD;
   - Requires interaction with a browser, which is not convenient for use in an artifact. It would complicate things by needing Selenium or similar.
     ![Captura](https://github.com/jonruida/PowerBI_Insights/blob/main/assets/image.png)
   - Requires credentials, and it seems necessary to create an [Azure App](https://learn.microsoft.com/en-us/rest/api/power-bi/) for this. Gena is developed in Azure, nayways don't know if it's possible to use its credentials. 
-- **Problem-Solving**:
-  - (Add your solutions or alternatives here)
 
 #### Option 2: REST API Connectivity
 - **Sources**:
@@ -109,9 +97,6 @@ graph TD;
   - The REST API allows for more direct integration without the need for browser interaction.
   - Requires creating an application in  [Azure App](https://learn.microsoft.com/en-us/rest/api/power-bi/) to obtain access tokens.
   - The REST API documentation provides detailed examples of how to make the necessary requests.
-
-- **Problem-Solving**:
-
 
 #### Option 3: DirectQuery Connectivity
 
@@ -142,8 +127,6 @@ graph TD;
   - The Export Data feature allows you to export data from Power BI visualizations to Excel or CSV files.
   - Requires configuration of Power BI to grant export permissions.
 
-- **Problem-Solving**:
-- 
 #### Option 5: Power BI in Jupyter Notebooks
 - **Sources**:
   - [Jupiter Notebook Github](https://github.com/microsoft/powerbi-jupyter)
@@ -161,9 +144,6 @@ graph TD;
 - **Report**:
   - Requires authentication via Azure AD or embed tokens to access Power BI reports.
   - The [documentation](https://github.com/microsoft/powerbi-jupyter/blob/main/DOCUMENTATION.md) provides detailed steps on how to install and use the library.
-
-- **Problem-Solving**:
-
 
 #### Option 6: Scanner API
 - **Sources**:
@@ -200,10 +180,6 @@ graph TD;
   - Requires proper configuration to ensure data governance and performance.
   - The documentation provides detailed steps on how to set up and use Datamarts.
 
-- **Problem-Solving**:
-  - Ensure that Power BI is configured to allow data ingestion and transformation by setting the appropriate permissions.
-  - Use the built-in visual and SQL query editor for ad-hoc analysis and to test the functionality before integrating it into your project.
-
 ### Option 8: Dataflows
 - **Sources**:
   - [Microsoft Doc](https://learn.microsoft.com/en-us/power-bi/transform-model/dataflows/dataflows-introduction-self-service)
@@ -220,12 +196,6 @@ graph TD;
   - Dataflows allow you to create a single source of truth by combining data from multiple sources and transforming it into a usable format.
   - Requires proper configuration of data sources and permissions to ensure smooth operation.
 
-- **Problem-Solving**:
-
-## Additional Sections
-
-### Feedback Section
-- (Add a section for user feedback or issue reporting)
 
 ### Future Work
 - (Outline any future plans or improvements)
