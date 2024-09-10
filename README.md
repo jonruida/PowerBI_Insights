@@ -7,8 +7,14 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 
 ### Web Scraping and Interception Approach
 #### Option 1:
-
-![View the flowchart here](https://github.com/jonruida/PowerBI_Insights/blob/main/assets/Web_Option_1.html)
+```plantuml
+@startuml
+A --> B : Run mitmdump
+B --> C : Run Selenium Script
+C --> D : Capture HTTP Requests
+D --> E : Process Captured Data
+E --> F : End
+@enduml
 ## Data Extraction Approaches
 
 ### Web Scraping and Interception Approach
