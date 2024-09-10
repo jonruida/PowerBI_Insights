@@ -26,36 +26,43 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 - **Problem-Solving**:
   - (Add your solutions or alternatives here)
 
-### Option 2: (Add your option title here)
+### Option 2: REST API Connectivity
 
 - **Technologies/Strategies**:
-  - (List the technologies and strategies here)
+  - Use the Power BI REST API
+  - Authentication via OAuth2
+  - Make HTTP requests from a Docker container
   - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
-  - (Indicate the status here)
+  - <span style="color:orange">In Progress</span>
 
 - **Report**:
-  - (Describe the issues and findings here)
+  - The REST API allows for more direct integration without the need for browser interaction.
+  - Requires creating an application in Azure AD to obtain access tokens.
+  - The REST API documentation provides detailed examples of how to make the necessary requests.
 
 - **Problem-Solving**:
-  - (Add your solutions or alternatives here)
+  - Implement an automated OAuth2 authentication flow.
+  - Use tools like Postman to test requests before integrating them into the code.
 
-### Option 3: (Add your option title here)
+### Option 3: DirectQuery Connectivity
 
 - **Technologies/Strategies**:
-  - (List the technologies and strategies here)
+  - Configure DirectQuery to connect directly to data sources
+  - Use Power BI Desktop to configure and publish reports
   - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
-  - (Indicate the status here)
+  - <span style="color:orange">In Progress</span>
 
 - **Report**:
-  - (Describe the issues and findings here)
+  - DirectQuery allows working with large volumes of data without needing to import them completely.
+  - Requires proper configuration of data sources to ensure performance.
 
 - **Problem-Solving**:
-  - (Add your solutions or alternatives here)
-
+  - Optimize SQL queries to improve performance.
+  - Ensure data sources are properly configured to support DirectQuery.
 ## Additional Sections
 
 ### Feedback Section
