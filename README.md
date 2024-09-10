@@ -6,7 +6,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 ## Data Extraction Approaches
 
 ### Web Scraping and Interception Approach
-#### [Option 1.1:](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping%20/Option_1)
+#### [Option 1.1 Selenium + mitmproxy:](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping%20/Option_1)
 ```mermaid
 graph TD;
     B[Run mitmdump];
@@ -33,9 +33,7 @@ graph TD;
 - **Problem Solving**:
   - <span style="color:orange">Not working</span> Use --anticomp option while using mitmdump comand [link](https://discourse.mitmproxy.org/t/get-raw-unzipped-html-when-export-using-mitmdump-w-filename-zlib/135/2)
 
-### Data Extraction Approach
-
-#### [Option 1.2](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_1.2):
+#### [Option 1.2 Selenium + mitmproxy](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_1.2):
 ```mermaid
 graph TD;
     A[Run mitmdump];
@@ -60,6 +58,36 @@ graph TD;
 
 - **Report**:
   - Improves the Option 1 by standarrdizing the format, still has some issues uncompressing GZIP due to single \ being recognized as double\\.
+ 
+
+#### Option 2: Python Requests
+- **Sources**:
+  - [Github repo](https://github.com/kulwinderkk/webscraping/blob/main/Improved%20script%20for%20PowerBI%20Webscraping.ipynb)
+  - [UN Power BI Dashboard](https://www.un.org/techenvoy/global-digital-compact)
+  - [json_to_csv.py](link-to-json-to-csv)
+  - [Prefect Documentation](https://docs.prefect.io/)
+
+- **Technologies/Strategies**:
+  - Use Python with Prefect for orchestrating the ETL process
+  - Scrape data from the UN Power BI dashboard using the provided script
+  - Extract data from multiple pages and merge it into a single DataFrame
+  - Save the scraped data to a CSV file
+  - **Status**: In Progress
+
+- **Status**: 
+  - <span style="color:orange">In Progress</span>
+
+- **Report**:
+  - The script efficiently scrapes data from the UN Power BI dashboard, extracting and merging data from multiple pages.
+  - The process involves using Prefect for task orchestration and Python requests for data retrieval.
+  - The script enhances scraping efficiency and reduces execution time from about 1 hour to under 1 minute.
+
+- **Problem-Solving**:
+  - Improved script performance and handling of multi-page data extraction.
+  - Potential issues include handling dynamic data formats and ensuring compatibility with different data sources.
+
+
+
 
 ### Native API Connectivity Approach
 
