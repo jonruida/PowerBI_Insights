@@ -6,7 +6,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 ## Data Extraction Approaches
 
 ### Web Scraping and Interception Approach
-#### Option 1.1:
+#### [Option 1.1:](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping%20/Option_1)
 ```mermaid
 graph TD;
     B[Run mitmdump];
