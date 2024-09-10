@@ -5,7 +5,42 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 
 ## Data Extraction Approaches
 
-### Native API Connectivity
+### Web Scraping and Interception Approach
+#### Option 1:
+
+```mermaid
+graph TD;
+    A[Start] --> B[Run mitmdump];
+    B --> C[Run Selenium Script];
+    C --> D[Capture HTTP Requests];
+    D --> E[Process Captured Data];
+    E --> F[End];
+
+
+#### Sources:
+ -  [Github Available solutions for embedding Power BI content Repo](https://github.com/microsoft/PowerBI-Developer-Samples)
+ -  Get Access Token Code, [Microfost Community Forum](https://community.fabric.microsoft.com/t5/Developer/REST-API-Get-Access-Token/m-p/1895937)
+
+- **Technologies/Strategies**:
+  - Use Selenium for web automation and interaction
+  - Use mitmproxy to intercept and capture HTTP requests
+  - Process captured data with custom scripts
+  - **Status**: <span style="color:orange">PENDING</span>
+
+- **Status**: 
+  - <span style="color:orange">In Progress</span>
+
+- **Report**:
+  - This approach allows for capturing and interacting with web data in a less native manner, providing flexibility in data extraction.
+  - Requires proper configuration of Selenium and mitmproxy to ensure smooth operation.
+  - The documentation and community examples provide guidance on setting up and using these tools effectively.
+
+- **Problem-Solving**:
+  - Ensure that Selenium and mitmproxy are properly configured to work together.
+  - Use custom scripts to process and analyze the captured data.
+
+
+### Native API Connectivity Approach
 
 #### Sources:
  -  [Github Available solutions for embedding Power BI content Repo](https://github.com/microsoft/PowerBI-Developer-Samples)
