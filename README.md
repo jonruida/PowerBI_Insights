@@ -7,7 +7,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 
 ### Native API Connectivity
 
-#### Option 1: PowerShell Module `MicrosoftPowerBIMgmt`
+#### Option 1: [PowerShell Module `MicrosoftPowerBIMgmt`](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Native_API_Con/Option_1) 
 
 - **Technologies/Strategies**:
   - Docker PowerShell container
