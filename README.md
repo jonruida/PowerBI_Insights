@@ -20,7 +20,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 
 - **Report**:
   - Requires interaction with a browser, which is not convenient for use in an artifact. It would complicate things by needing Selenium or similar.
-    [Captura]!(https://github.com/jonruida/PowerBI_Insights/blob/main/assets/image.png)
+    ![Captura](https://github.com/jonruida/PowerBI_Insights/blob/main/assets/image.png)
   - Requires credentials, and it seems necessary to create an [Azure App](https://learn.microsoft.com/en-us/rest/api/power-bi/) for this.
 
 - **Problem-Solving**:
