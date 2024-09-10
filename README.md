@@ -80,6 +80,9 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 - **Problem-Solving**:
 - 
 #### Option 5: [Power BI in Jupyter Notebooks](https://github.com/microsoft/powerbi-jupyter)
+- **Sources**:
+  - [Jupiter Notebook Github]
+  - [PyPI](https://pypi.org/search/?q=Power+BI+report+demo.ipynb)
 
 - **Technologies/Strategies**:
   - Use the [powerbiclient library](https://github.com/microsoft/powerbi-jupyter) to embed Power BI reports in Jupyter Notebooks
@@ -95,6 +98,24 @@ Automatic insight generator from PowerBI web Reports and Dashboards
   - The [documentation](https://github.com/microsoft/powerbi-jupyter/blob/main/DOCUMENTATION.md) provides detailed steps on how to install and use the library.
 
 - **Problem-Solving**:
+
+
+#### Option 6: Scanner API
+- **Sources**:
+  - Example (https://www.dataxbi.com/blog/2021/08/23/probando-scanner-api-power-bi/)
+  - [Microsoft Doc](https://learn.microsoft.com/en-us/fabric/governance/metadata-scanning-overview)
+- **Technologies/Strategies**:
+  - Use the Power BI Scanner API to extract metadata from Power BI workspaces
+  - Authenticate using Azure AD with service principal
+  - Make HTTP requests from a Docker container to scan and retrieve metadata
+  - **Status**: <span style="color:orange">PENDING</span>
+
+- **Status**: 
+  - <span style="color:orange">In Progress</span>
+
+- **Report**:
+  - The Scanner API allows you to extract detailed metadata from Power BI workspaces, including datasets, reports, dashboards, and more.
+  - Requires proper configuration of Power BI and Azure AD to grant the necessary permissions for scanning.
 
 ## Additional Sections
 
