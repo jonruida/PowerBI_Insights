@@ -9,9 +9,11 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 
 #### Sources ####:
  -  [Github Available solutions for embedding Power BI content Repo](https://github.com/microsoft/PowerBI-Developer-Samples)
+ -  Get Access Token Code, [Microfost Community Forum](https://community.fabric.microsoft.com/t5/Developer/REST-API-Get-Access-Token/m-p/1895937)
 
 #### Option 1: [PowerShell Module `MicrosoftPowerBIMgmt`](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Native_API_Con/Option_1) 
-
+- **Sources**:
+  - [Module doc](https://learn.microsoft.com/en-us/powershell/module/microsoftpowerbimgmt.reports/get-powerbireport?view=powerbi-ps)
 - **Technologies/Strategies**:
   - Docker PowerShell container
   - Connect from container using PWSH native module
@@ -60,7 +62,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
   - Requires configuration of data sources in PowerBI.
 
 #### Option 4: Export Data
-- **Links**:
+- **Sorces**:
   - [Forum](https://stackoverflow.com/questions/52079733/data-scraping-from-published-power-bi-visual)
 - **Technologies/Strategies**:
   - Use the [Power BI Export Data feature](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data)
@@ -74,6 +76,23 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 - **Report**:
   - The Export Data feature allows you to export data from Power BI visualizations to Excel or CSV files.
   - Requires configuration of Power BI to grant export permissions.
+
+- **Problem-Solving**:
+- 
+#### Option 5: [Power BI in Jupyter Notebooks](https://github.com/microsoft/powerbi-jupyter)
+
+- **Technologies/Strategies**:
+  - Use the [powerbiclient library](https://github.com/microsoft/powerbi-jupyter) to embed Power BI reports in Jupyter Notebooks
+  - Authenticate using Azure AD or embed tokens
+  - Export data from Power BI visuals directly within Jupyter Notebooks
+  - **Status**: <span style="color:orange">PENDING</span>
+
+- **Status**: 
+  - <span style="color:orange">In Progress</span>
+
+- **Report**:
+  - Requires authentication via Azure AD or embed tokens to access Power BI reports.
+  - The [documentation](https://github.com/microsoft/powerbi-jupyter/blob/main/DOCUMENTATION.md) provides detailed steps on how to install and use the library.
 
 - **Problem-Solving**:
 
