@@ -17,14 +17,14 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 
 ### Web Scraping and Interception Approach
 #### Option 1:
-!Diagrama de ejemplo
 ```mermaid
 graph TD;
-    A[Inicio] --> B[Proceso 1];
-    A --> C[Proceso 2];
-    B --> D[Fin];
-    C --> D;
-
+    A[Start] --> B[Run mitmdump];
+    B --> C[Run Selenium Script];
+    C --> D[Capture HTTP Requests];
+    D --> E[Process Captured Data];
+    E --> F[End];
+```
 #### Sources:
  -  [Github Available solutions for embedding Power BI content Repo](https://github.com/microsoft/PowerBI-Developer-Samples)
  -  Get Access Token Code, [Microfost Community Forum](https://community.fabric.microsoft.com/t5/Developer/REST-API-Get-Access-Token/m-p/1895937)
