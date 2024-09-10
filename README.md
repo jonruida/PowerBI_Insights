@@ -1,7 +1,7 @@
 # PowerBI_Insights
 Automatic insight generator from PowerBI web Reports and Dashboards
 ## Architecture
-![Diagrama de arquitectura](https://github.com/jonruida/PowerBI_Insights/blob/main/assets/ARCH_INTERN.png))))))
+![Diagrama de arquitectura](https://github.com/jonruida/PowerBI_Insights/blob/main/assets/ARCH_INTERN.png)
 
 ## Approaches
 
