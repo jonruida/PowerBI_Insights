@@ -7,16 +7,6 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 
 ### Web Scraping and Interception Approach
 #### Option 1:
-
-## Data Extraction Approaches
-
-### Web Scraping and Interception Approach
-#### Option 1:
-
-## Data Extraction Approaches
-
-### Web Scraping and Interception Approach
-#### Option 1:
 ```mermaid
 graph TD;
     B[Run mitmdump];
@@ -123,9 +113,9 @@ graph TD;
 
 - **Problem-Solving**:
 - 
-#### Option 5: [Power BI in Jupyter Notebooks](https://github.com/microsoft/powerbi-jupyter)
+#### Option 5: Power BI in Jupyter Notebooks
 - **Sources**:
-  - [Jupiter Notebook Github]
+  - [Jupiter Notebook Github](https://github.com/microsoft/powerbi-jupyter)
   - [PyPI](https://pypi.org/search/?q=Power+BI+report+demo.ipynb)
 
 - **Technologies/Strategies**:
