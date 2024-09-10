@@ -21,8 +21,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 - **Report**:
   - Requires interaction with a browser, which is not convenient for use in an artifact. It would complicate things by needing Selenium or similar.
     ![Captura](https://github.com/jonruida/PowerBI_Insights/blob/main/assets/image.png)
-  - Requires credentials, and it seems necessary to create an [Azure App](https://learn.microsoft.com/en-us/rest/api/power-bi/) for this.
-
+  - Requires credentials, and it seems necessary to create an [Azure App](https://learn.microsoft.com/en-us/rest/api/power-bi/) for this. Gena is developed in Azure, nayways don't know if it's possible to use its credentials. 
 - **Problem-Solving**:
   - (Add your solutions or alternatives here)
 
@@ -58,7 +57,8 @@ Automatic insight generator from PowerBI web Reports and Dashboards
   - Requires configuration of data sources in PowerBI.
 
 #### Option 4: Export Data
-
+- **Links**:
+  - [Forum](https://stackoverflow.com/questions/52079733/data-scraping-from-published-power-bi-visual)
 - **Technologies/Strategies**:
   - Use the [Power BI Export Data feature](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data)
   - Configure Power BI to allow data export
