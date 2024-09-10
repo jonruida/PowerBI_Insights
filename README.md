@@ -16,7 +16,7 @@ graph TD;
     
 ```
 - **Sources**:
-  -
+  - [mimproxy doc](https://docs.mitmproxy.org/stable/)
 
 - **Technologies/Strategies**:
   - Use Selenium for web automation and interaction
@@ -30,6 +30,8 @@ graph TD;
 - **Report**:
   - Using Selenium with Firefox browser due to proxy certificate security errors with Chrome.
   - This approach allows for capturing and interacting with web data in a less native manner, providing flexibility in data extraction.
+- **Problem Solving**:
+  - <span style="color:orange">Not working</span> Use --anticomp option while using mitmdump comand [link](https://discourse.mitmproxy.org/t/get-raw-unzipped-html-when-export-using-mitmdump-w-filename-zlib/135/2)
 
 ### Data Extraction Approach
 
@@ -44,7 +46,8 @@ graph TD;
 
 ```
 - **Sources**:
-  -
+  - [Read_dumpfile github](https://github.com/YagiGo/YPTN/blob/master/io_read_dumpfile.py)
+
 
 - **Technologies/Strategies**:
   - Use mitmproxy to intercept and capture HTTP requests
