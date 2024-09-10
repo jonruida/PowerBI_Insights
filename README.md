@@ -19,11 +19,11 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 #### Option 1:
 ```mermaid
 graph TD;
-    A[Start] --> B[Run mitmdump];
+    B[Run mitmdump];
     B --> C[Run Selenium Script];
     C --> D[Capture HTTP Requests];
     D --> E[Process Captured Data];
-    E --> F[End];
+    
 ```
 - **Sources**:
   -
