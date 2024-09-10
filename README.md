@@ -13,6 +13,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 
 #### Option 1: [PowerShell Module `MicrosoftPowerBIMgmt`](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Native_API_Con/Option_1) 
 - **Sources**:
+  - [Article c-sharpcorner](https://www.c-sharpcorner.com/article/install-power-bi-powershell-in-your-windows-machine/)
   - [Module doc](https://learn.microsoft.com/en-us/powershell/module/microsoftpowerbimgmt.reports/get-powerbireport?view=powerbi-ps)
 - **Technologies/Strategies**:
   - Docker PowerShell container
@@ -31,7 +32,8 @@ Automatic insight generator from PowerBI web Reports and Dashboards
   - (Add your solutions or alternatives here)
 
 #### Option 2: REST API Connectivity
-
+- **Sources**:
+  -[Blog Coupler](https://blog.coupler.io/power-bi-rest-api/)  
 - **Technologies/Strategies**:
   - Authentication via OAuth2
   - Make HTTP requests from a Docker container
@@ -104,6 +106,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 - **Sources**:
   - Example (https://www.dataxbi.com/blog/2021/08/23/probando-scanner-api-power-bi/)
   - [Microsoft Doc](https://learn.microsoft.com/en-us/fabric/governance/metadata-scanning-overview)
+  - [PowerBI Doc](https://powerbi.microsoft.com/en-us/blog/announcing-scanner-api-admin-rest-apis-enhancements-to-include-dataset-tables-columns-measures-dax-expressions-and-mashup-queries/)
 - **Technologies/Strategies**:
   - Use the Power BI Scanner API to extract metadata from Power BI workspaces
   - Authenticate using Azure AD with service principal
@@ -116,6 +119,45 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 - **Report**:
   - The Scanner API allows you to extract detailed metadata from Power BI workspaces, including datasets, reports, dashboards, and more.
   - Requires proper configuration of Power BI and Azure AD to grant the necessary permissions for scanning.
+
+### Option 7: Datamarts
+- **Sources**:
+  - [Microsoft Doc](https://learn.microsoft.com/en-us/power-bi/transform-model/datamarts/datamarts-overview)
+- **Technologies/Strategies**:
+  - Use the Power BI Datamarts to create a fully managed SQL database for data storage and exploration
+  - Ingest, transform, and load (ETL) data using Power Query
+  - Define relationships and policies for business intelligence and analysis
+  - **Status**: <span style="color:orange">PENDING</span>
+
+- **Status**: 
+  - <span style="color:orange">In Progress</span>
+
+- **Report**:
+  - Datamarts provide a no-code experience for data ingestion and transformation, making it easier for self-service users to perform relational database analytics.
+  - Requires proper configuration to ensure data governance and performance.
+  - The documentation provides detailed steps on how to set up and use Datamarts.
+
+- **Problem-Solving**:
+  - Ensure that Power BI is configured to allow data ingestion and transformation by setting the appropriate permissions.
+  - Use the built-in visual and SQL query editor for ad-hoc analysis and to test the functionality before integrating it into your project.
+
+### Option 8: Dataflows
+- **Sources**:
+  - [Microsoft Doc](https://learn.microsoft.com/en-us/power-bi/transform-model/dataflows/dataflows-introduction-self-service)
+- **Technologies/Strategies**:
+  - Use Power BI Dataflows to create reusable transformation logic
+  - Connect to various data sources and perform ETL (Extract, Transform, Load) operations
+  - Store data in Azure Data Lake Gen 2 for further processing and analysis
+  - **Status**: <span style="color:orange">PENDING</span>
+
+- **Status**: 
+  - <span style="color:orange">In Progress</span>
+
+- **Report**:
+  - Dataflows allow you to create a single source of truth by combining data from multiple sources and transforming it into a usable format.
+  - Requires proper configuration of data sources and permissions to ensure smooth operation.
+
+- **Problem-Solving**:
 
 ## Additional Sections
 
