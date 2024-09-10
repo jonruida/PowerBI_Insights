@@ -40,9 +40,10 @@ graph TD;
 ```mermaid
 graph TD;
     A[Run mitmdump];
-    A --> B[Run Formatting Script];
-    B --> C[Use Formatted File];
-    C --> D[Process Formatted Data];
+    A --> B[Run Selenium Script];
+    B --> C[Format Dumpfile Script];
+    C --> D[Capture HTTP Requests];
+    D --> E[Process Captured Data];
 
 ```
 - **Sources**:
