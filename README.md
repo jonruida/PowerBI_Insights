@@ -1,6 +1,6 @@
 # PowerBI_Insights
 Automatic insight generator from PowerBI web Reports and Dashboards
-
+!https://github.com/jonruida/PowerBI_Insights/blob/main/ARCH_INTERN.png
 ## Approaches
 
 ### Native API Connectivity
