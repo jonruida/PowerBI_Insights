@@ -7,7 +7,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 
 ### Native API Connectivity
 
-#### Sources ####:
+#### Sources:
  -  [Github Available solutions for embedding Power BI content Repo](https://github.com/microsoft/PowerBI-Developer-Samples)
  -  Get Access Token Code, [Microfost Community Forum](https://community.fabric.microsoft.com/t5/Developer/REST-API-Get-Access-Token/m-p/1895937)
 
