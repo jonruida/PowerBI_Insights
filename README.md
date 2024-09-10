@@ -11,10 +11,10 @@ Automatic insight generator from PowerBI web Reports and Dashboards
   - Docker PowerShell container
   - Connect from container using PWSH native module
   - Get access token
-  - **Status**: PENDING
+  - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
-  - **Failed**
+  - <span style="color:red">Failed</span>
 
 - **Report**:
   - Requires interaction with a browser, which is not convenient for use in an artifact. It would complicate things by needing Selenium or similar.
@@ -27,7 +27,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 
 - **Technologies/Strategies**:
   - (List the technologies and strategies here)
-  - **Status**: PENDING
+  - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
   - (Indicate the status here)
@@ -42,7 +42,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 
 - **Technologies/Strategies**:
   - (List the technologies and strategies here)
-  - **Status**: PENDING
+  - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
   - (Indicate the status here)
@@ -66,3 +66,12 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 
 ### License
 - (Specify the license under which the project is distributed)
+
+!Diagrama de ejemplo
+
+```mermaid
+graph TD;
+    A[Inicio] --> B[Proceso 1];
+    A --> C[Proceso 2];
+    B --> D[Fin];
+    C --> D;
