@@ -75,7 +75,7 @@ graph TD;
   - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
-  - <span style="color:red">Failed</span>
+  - <span style="color:red">Discarded</span>
 
 - **Report**:
   - Requires interaction with a browser, which is not convenient for use in an artifact. It would complicate things by needing Selenium or similar.
