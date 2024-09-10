@@ -7,6 +7,9 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 
 ### Native API Connectivity
 
+#### Sources ####:
+ -  [Github Available solutions for embedding Power BI content Repo](https://github.com/microsoft/PowerBI-Developer-Samples)
+
 #### Option 1: [PowerShell Module `MicrosoftPowerBIMgmt`](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Native_API_Con/Option_1) 
 
 - **Technologies/Strategies**:
