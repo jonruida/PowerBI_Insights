@@ -22,20 +22,17 @@ graph TD;
   - Use Selenium for web automation and interaction
   - Use mitmproxy to intercept and capture HTTP requests
   - Process captured data with custom scripts
-  - **Status**: <span style="color:orange">PENDING</span>
+  - **Status**: <span style="color:orange">Data format errors</span>
 
 - **Status**: 
   - <span style="color:orange">In Progress</span>
 
 - **Report**:
+  - Using Selenium with Firefox browser due to proxy certificate security errors with Chrome.
   - This approach allows for capturing and interacting with web data in a less native manner, providing flexibility in data extraction.
-  - Requires proper configuration of Selenium and mitmproxy to ensure smooth operation.
-  - The documentation and community examples provide guidance on setting up and using these tools effectively.
 
 - **Problem-Solving**:
-  - Ensure that Selenium and mitmproxy are properly configured to work together.
-  - Use custom scripts to process and analyze the captured data.
-
+  - Data extracted but getting diferent formats depending on the PowerBi URL source
 
 ### Native API Connectivity Approach
 
