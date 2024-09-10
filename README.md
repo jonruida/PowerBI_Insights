@@ -215,11 +215,3 @@ graph TD;
 ### License
 - (Specify the license under which the project is distributed)
 
-!Diagrama de ejemplo
-
-```mermaid
-graph TD;
-    A[Inicio] --> B[Proceso 1];
-    A --> C[Proceso 2];
-    B --> D[Fin];
-    C --> D;
