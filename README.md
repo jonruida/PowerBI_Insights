@@ -33,7 +33,7 @@ graph TD;
 
 ### Data Extraction Approach
 
-#### Option 1.2:
+#### [Option 1.2](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_1.2):
 ```mermaid
 graph TD;
     A[Run mitmdump];
