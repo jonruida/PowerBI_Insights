@@ -34,6 +34,39 @@ graph TD;
 - **Problem-Solving**:
   - Data extracted but getting diferent formats depending on the PowerBi URL source
 
+### Data Extraction Approach
+
+#### Option 2:
+```mermaid
+graph TD;
+    A[Run mitmdump];
+    A --> B[Run Formatting Script];
+    B --> C[Use Formatted File];
+    C --> D[Process Formatted Data];
+
+```
+- **Sources**:
+  -
+
+- **Technologies/Strategies**:
+  - Use mitmproxy to intercept and capture HTTP requests
+  - Run a script (`read_dumpfile_to_file.py`) to format the captured data
+  - Use `gzip_readfile` to handle the formatted data
+  - Process the formatted data with custom scripts
+
+- **Status**: 
+  - <span style="color:green">In Progress</span>
+
+- **Report**:
+  - Implementing a new approach to handle data formatting before processing.
+  - This method aims to address data format inconsistencies and improve overall data extraction reliability.
+
+- **Problem-Solving**:
+  - Transitioning from direct extraction to pre-processing with a formatting script to handle varying data formats more effectively.
+
+
+
+
 ### Native API Connectivity Approach
 
 #### Sources:
