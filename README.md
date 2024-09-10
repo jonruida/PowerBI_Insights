@@ -57,6 +57,23 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 - **Report**:
   - Requires configuration of data sources in PowerBI.
 
+#### Option 4: Export Data
+
+- **Technologies/Strategies**:
+  - Use the [Power BI Export Data feature](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data)
+  - Configure Power BI to allow data export
+  - Make HTTP requests from a Docker container to export data
+  - **Status**: <span style="color:orange">PENDING</span>
+
+- **Status**: 
+  - <span style="color:orange">In Progress</span>
+
+- **Report**:
+  - The Export Data feature allows you to export data from Power BI visualizations to Excel or CSV files.
+  - Requires configuration of Power BI to grant export permissions.
+
+- **Problem-Solving**:
+
 ## Additional Sections
 
 ### Feedback Section
