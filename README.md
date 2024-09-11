@@ -21,7 +21,6 @@ graph TD;
 - **Technologies/Strategies**:
   - Use Selenium for web automation and interaction
   - Use mitmproxy to intercept and capture HTTP requests
-  - **Status**: <span style="color:orange">Data format errors</span>
 
 - **Status**: 
   - <span style="color:orange">Discarded</span>
@@ -50,7 +49,6 @@ graph TD;
   - Use mitmproxy to intercept and capture HTTP requests
   - Run a script (`read_dumpfile_to_file.py`) to format the captured data
   - Process the formatted data with `gzip_readfile` script
-  - **Status**: <span style="color:orange">Doesn`t recognize GZIP</span>
 
 - **Status**: 
   - <span style="color:green">Stopped</span>
@@ -80,8 +78,6 @@ graph TD;
 - **Report**:
   - Improves option 1.1 and option 1.2 by including a catpure script along with mitmdump running command
   - Solves data format and compression problems
-- **Problem Solving**:
-  - <span style="color:orange">Not working:</span> Use --anticomp option while using mitmdump comand [link](https://discourse.mitmproxy.org/t/get-raw-unzipped-html-when-export-using-mitmdump-w-filename-zlib/135/2)
 
 #### Option 2: [Python Requests](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_2)
 
@@ -99,7 +95,22 @@ graph TD;
   - Trying to extract data tables structure from API.
     
 - **Status**: 
-  - <span style="color:orange">In Progress</span>
+  - <span style="color:orange"> PENDING </span>
+
+  #### Option 3: Selenimum (PYPI with package)
+
+- **Sources**:
+  - [PYPI](https://pypi.org/project/PBI-SELENIUM/#description)
+
+- **Technologies/Strategies**:
+  - Use PyPi library to automatize selenium.
+
+- **Report**:
+  - It needs email, password and url like previes custom option.
+  - 
+- **Status**: 
+  
+  - <span style="color:orange"> NEXT PENDING </span>
 
 
 
@@ -117,7 +128,6 @@ graph TD;
   - Docker PowerShell container
   - Connect from container using PWSH native module
   - Get access token
-  - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
   - <span style="color:red">Discarded</span>
@@ -133,10 +143,9 @@ graph TD;
 - **Technologies/Strategies**:
   - Authentication via OAuth2
   - Make HTTP requests from a Docker container
-  - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
-  - <span style="color:orange">In Progress</span>
+  - <span style="color:orange">PENDING</span>
 
 - **Report**:
   - The REST API allows for more direct integration without the need for browser interaction.
@@ -148,10 +157,9 @@ graph TD;
 - **Technologies/Strategies**:
   - Configure DirectQuery to connect directly to data sources
   - Use Power BI Desktop to configure and publish reports
-  - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
-  - <span style="color:orange">In Progress</span>
+  - <span style="color:orange">PENDING</span>
 
 - **Report**:
   - Requires configuration of data sources in PowerBI.
@@ -163,10 +171,9 @@ graph TD;
   - Use the [Power BI Export Data feature](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data)
   - Configure Power BI to allow data export
   - Make HTTP requests from a Docker container to export data
-  - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
-  - <span style="color:orange">In Progress</span>
+  - <span style="color:orange">PENDING</span>
 
 - **Report**:
   - The Export Data feature allows you to export data from Power BI visualizations to Excel or CSV files.
@@ -181,10 +188,9 @@ graph TD;
   - Use the [powerbiclient library](https://github.com/microsoft/powerbi-jupyter) to embed Power BI reports in Jupyter Notebooks
   - Authenticate using Azure AD or embed tokens
   - Export data from Power BI visuals directly within Jupyter Notebooks
-  - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
-  - <span style="color:orange">In Progress</span>
+  - <span style="color:orange">PENDING</span>
 
 - **Report**:
   - Requires authentication via Azure AD or embed tokens to access Power BI reports.
@@ -199,10 +205,9 @@ graph TD;
   - Use the Power BI Scanner API to extract metadata from Power BI workspaces
   - Authenticate using Azure AD with service principal
   - Make HTTP requests from a Docker container to scan and retrieve metadata
-  - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
-  - <span style="color:orange">In Progress</span>
+  - <span style="color:orange">PENDING</span>
 
 - **Report**:
   - The Scanner API allows you to extract detailed metadata from Power BI workspaces, including datasets, reports, dashboards, and more.
@@ -215,10 +220,9 @@ graph TD;
   - Use the Power BI Datamarts to create a fully managed SQL database for data storage and exploration
   - Ingest, transform, and load (ETL) data using Power Query
   - Define relationships and policies for business intelligence and analysis
-  - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
-  - <span style="color:orange">In Progress</span>
+  - <span style="color:orange">PENDING</span>
 
 - **Report**:
   - Datamarts provide a no-code experience for data ingestion and transformation, making it easier for self-service users to perform relational database analytics.
@@ -232,10 +236,9 @@ graph TD;
   - Use Power BI Dataflows to create reusable transformation logic
   - Connect to various data sources and perform ETL (Extract, Transform, Load) operations
   - Store data in Azure Data Lake Gen 2 for further processing and analysis
-  - **Status**: <span style="color:orange">PENDING</span>
 
 - **Status**: 
-  - <span style="color:orange">In Progress</span>
+  - <span style="color:orange">PENDING</span>
 
 - **Report**:
   - Dataflows allow you to create a single source of truth by combining data from multiple sources and transforming it into a usable format.
