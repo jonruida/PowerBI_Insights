@@ -97,7 +97,7 @@ graph TD;
 - **Status**: 
   - <span style="color:orange"> PENDING </span>
 
-  #### Option 3: Selenimum (PYPI with package)
+#### Option 3: Selenimum (PYPI with package)
 
 - **Sources**:
   - [PYPI](https://pypi.org/project/PBI-SELENIUM/#description)
