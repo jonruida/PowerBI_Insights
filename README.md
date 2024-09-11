@@ -31,7 +31,7 @@ graph TD;
   - Using Selenium with Firefox browser due to proxy certificate security errors with Chrome.
   - This approach allows for capturing and interacting with web data in a less native manner, providing flexibility in data extraction.
 - **Problem Solving**:
-  - <span style="color:orange">Not working</span> Use --anticomp option while using mitmdump comand [link](https://discourse.mitmproxy.org/t/get-raw-unzipped-html-when-export-using-mitmdump-w-filename-zlib/135/2)
+  - <span style="color:orange">Not working:</span> Use --anticomp option while using mitmdump comand [link](https://discourse.mitmproxy.org/t/get-raw-unzipped-html-when-export-using-mitmdump-w-filename-zlib/135/2)
 
 #### [Option 1.2 Selenium + mitmproxy](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_1.2):
 ```mermaid
@@ -71,11 +71,13 @@ graph TD;
   - Scrape data from the UN Power BI dashboard using the provided script
   - Based on a payload
 
+- **Report**:
+  - Needs a custom payload for each dashboard, so it's necessary a method for create custom payloads automaticaly.
+  - Trying to extract data tables structure from API.
+    
 - **Status**: 
   - <span style="color:orange">In Progress</span>
 
-- **Report**:
-  - Needs a custom payload for each dashboard, so it's necessary a method for create custom payloads automaticaly.
 
 
 ### Native API Connectivity Approach
