@@ -21,7 +21,6 @@ graph TD;
 - **Technologies/Strategies**:
   - Use Selenium for web automation and interaction
   - Use mitmproxy to intercept and capture HTTP requests
-  - Process captured data with custom scripts
   - **Status**: <span style="color:orange">Data format errors</span>
 
 - **Status**: 
@@ -54,11 +53,35 @@ graph TD;
   - **Status**: <span style="color:orange">Doesn`t recognize GZIP</span>
 
 - **Status**: 
-  - <span style="color:green">In Progress</span>
+  - <span style="color:green">Stopped</span>
 
 - **Report**:
   - Improves the Option 1 by standarrdizing the format, still has some issues uncompressing GZIP due to single \ being recognized as double\\.
- 
+
+ #### [Option 1.3 Selenium + mitmproxy:](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping%20/Option_1.3)
+```mermaid
+graph TD;
+    B[Run mitmdump + interception script];
+    B --> C[Run Selenium Script];
+    C --> D[Capture HTTP Requests];
+    
+```
+- **Sources**:
+  - [mimproxy doc](https://docs.mitmproxy.org/stable/)
+
+- **Technologies/Strategies**:
+  - Use Selenium for web automation and interaction
+  - Use mitmproxy to intercept and capture HTTP requests
+  - Process captured data with custom script
+
+- **Status**: 
+  - <span style="color:orange">In progress</span>
+
+- **Report**:
+  - Improves option 1.1 and option 1.2 by including a catpure script along with mitmdump running command
+  - Solves data format and compression problems
+- **Problem Solving**:
+  - <span style="color:orange">Not working:</span> Use --anticomp option while using mitmdump comand [link](https://discourse.mitmproxy.org/t/get-raw-unzipped-html-when-export-using-mitmdump-w-filename-zlib/135/2)
 
 #### Option 2: [Python Requests](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_2)
 
