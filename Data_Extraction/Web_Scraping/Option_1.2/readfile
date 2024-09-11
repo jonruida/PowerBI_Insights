@@ -1,7 +1,11 @@
-<HTTPFlow
-  request = Request(GET wabi-us-west2-api.analysis.windows.net:443/public/reports/fc7abc72-597a-40a6-8311-8f82bfbd381f/modelsAndExploration?preferReadOnlySession=true)
-  response = Response(200, application/json; charset=utf-8, 38.7k)
-  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+<HTTPFlow
+
+  request = Request(GET wabi-us-west2-api.analysis.windows.net:443/public/reports/fc7abc72-597a-40a6-8311-8f82bfbd381f/modelsAndExploration?preferReadOnlySession=true)
+
+  response = Response(200, application/json; charset=utf-8, 38.7k)
+
+  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50090)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -3086,10 +3090,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(GET wabi-us-west2-api.analysis.windows.net:443/public/reports/resourcePackage/8503806/1%2F34a82b2e-6dc1-4289-8000-c18a9e339a9d%2FResourcePackage%2FBlobIdV2-a1f440a6-ddc4-4abc-9ee3-432aa9c54579cd3Z9iw1dAOlG6eLTrUEs-rFO03Lnr30KUGmJzJJi8A%3D.json)
-  response = Response(200, application/octet-stream, 110b)
-  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+<HTTPFlow
+
+  request = Request(GET wabi-us-west2-api.analysis.windows.net:443/public/reports/resourcePackage/8503806/1%2F34a82b2e-6dc1-4289-8000-c18a9e339a9d%2FResourcePackage%2FBlobIdV2-a1f440a6-ddc4-4abc-9ee3-432aa9c54579cd3Z9iw1dAOlG6eLTrUEs-rFO03Lnr30KUGmJzJJi8A%3D.json)
+
+  response = Response(200, application/octet-stream, 110b)
+
+  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50090)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -3405,10 +3413,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/conceptualschema)
-  response = Response(200, application/json; charset=utf-8, 3.9k)
-  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/conceptualschema)
+
+  response = Response(200, application/json; charset=utf-8, 3.9k)
+
+  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50090)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -3996,10 +4008,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 1.6k)
-  client_conn = Client(127.0.0.1:50076, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 1.6k)
+
+  client_conn = Client(127.0.0.1:50076, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50078)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -4470,10 +4486,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 613b)
-  client_conn = Client(127.0.0.1:50079, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 613b)
+
+  client_conn = Client(127.0.0.1:50079, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50094)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -4849,10 +4869,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 592b)
-  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 592b)
+
+  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50090)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -5226,10 +5250,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 2.0k)
-  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 2.0k)
+
+  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50090)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -5732,10 +5760,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 625b)
-  client_conn = Client(127.0.0.1:50076, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 625b)
+
+  client_conn = Client(127.0.0.1:50076, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50078)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -6114,10 +6146,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 610b)
-  client_conn = Client(127.0.0.1:50099, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 610b)
+
+  client_conn = Client(127.0.0.1:50099, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50102)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -6507,10 +6543,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 786b)
-  client_conn = Client(127.0.0.1:50098, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 786b)
+
+  client_conn = Client(127.0.0.1:50098, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50101)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -6923,10 +6963,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 884b)
-  client_conn = Client(127.0.0.1:50079, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 884b)
+
+  client_conn = Client(127.0.0.1:50079, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50094)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -7350,10 +7394,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 747b)
-  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 747b)
+
+  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50090)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -7775,10 +7823,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 629b)
-  client_conn = Client(127.0.0.1:50100, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 629b)
+
+  client_conn = Client(127.0.0.1:50100, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50103)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -8159,10 +8211,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 1.9k)
-  client_conn = Client(127.0.0.1:50076, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 1.9k)
+
+  client_conn = Client(127.0.0.1:50076, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50078)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -8640,10 +8696,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 892b)
-  client_conn = Client(127.0.0.1:50079, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 892b)
+
+  client_conn = Client(127.0.0.1:50079, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50094)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -9043,10 +9103,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 2.1k)
-  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 2.1k)
+
+  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50090)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -9530,10 +9594,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 627b)
-  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 627b)
+
+  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50090)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -9973,10 +10041,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 872b)
-  client_conn = Client(127.0.0.1:50076, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 872b)
+
+  client_conn = Client(127.0.0.1:50076, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50078)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -10401,10 +10473,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 1.8k)
-  client_conn = Client(127.0.0.1:50076, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 1.8k)
+
+  client_conn = Client(127.0.0.1:50076, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50078)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -10908,10 +10984,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 874b)
-  client_conn = Client(127.0.0.1:50099, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 874b)
+
+  client_conn = Client(127.0.0.1:50099, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50102)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -11350,10 +11430,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 611b)
-  client_conn = Client(127.0.0.1:50079, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 611b)
+
+  client_conn = Client(127.0.0.1:50079, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50094)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -11768,10 +11852,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 1.5k)
-  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 1.5k)
+
+  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50090)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -12255,10 +12343,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 620b)
-  client_conn = Client(127.0.0.1:50100, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 620b)
+
+  client_conn = Client(127.0.0.1:50100, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50103)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -12664,10 +12756,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 749b)
-  client_conn = Client(127.0.0.1:50098, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 749b)
+
+  client_conn = Client(127.0.0.1:50098, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50101)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -13101,10 +13197,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 624b)
-  client_conn = Client(127.0.0.1:50076, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 624b)
+
+  client_conn = Client(127.0.0.1:50076, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50078)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -13512,10 +13612,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 2.0k)
-  client_conn = Client(127.0.0.1:50099, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 2.0k)
+
+  client_conn = Client(127.0.0.1:50099, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50102)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -14032,10 +14136,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 582b)
-  client_conn = Client(127.0.0.1:50079, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 582b)
+
+  client_conn = Client(127.0.0.1:50079, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50094)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -14439,10 +14547,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 779b)
-  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 779b)
+
+  client_conn = Client(127.0.0.1:50080, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50090)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -14869,10 +14981,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 620b)
-  client_conn = Client(127.0.0.1:50100, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 620b)
+
+  client_conn = Client(127.0.0.1:50100, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50103)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
@@ -15281,10 +15397,14 @@ wabi-us-west2-api.analysis.windows.net
     'version': 20,
     'websocket': None}
 
-<HTTPFlow
-  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
-  response = Response(200, text/plain; charset=utf-8, 870b)
-  client_conn = Client(127.0.0.1:50098, state=closed, tls)
+<HTTPFlow
+
+  request = Request(POST wabi-us-west2-api.analysis.windows.net:443/public/reports/querydata?synchronous=true)
+
+  response = Response(200, text/plain; charset=utf-8, 870b)
+
+  client_conn = Client(127.0.0.1:50098, state=closed, tls)
+
   server_conn = Server(wabi-us-west2-api.analysis.windows.net:443, state=closed, tls, src_port=50101)>
 wabi-us-west2-api.analysis.windows.net
 {   'backup': None,
