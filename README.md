@@ -6,7 +6,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 ## Data Extraction Approaches
 
 ### Web Scraping and Interception Approach
-#### [Option 1.1 Selenium + mitmproxy:](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping%20/Option_1.1)
+#### Option 1.1 [Selenium + mitmproxy:](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping%20/Option_1.1)
 ```mermaid
 graph TD;
     B[Run mitmdump];
@@ -32,7 +32,7 @@ graph TD;
 - **Problem Solving**:
   - <span style="color:orange">Not working:</span> Use --anticomp option while using mitmdump comand [link](https://discourse.mitmproxy.org/t/get-raw-unzipped-html-when-export-using-mitmdump-w-filename-zlib/135/2)
 
-#### [Option 1.2 Selenium + mitmproxy](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_1.2):
+#### Option 1.2 [Selenium + mitmproxy](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_1.2):
 ```mermaid
 graph TD;
     A[Run mitmdump];
@@ -58,7 +58,7 @@ graph TD;
 - **Report**:
   - Improves the Option 1 by standarrdizing the format, still has some issues uncompressing GZIP due to single \ being recognized as double\\.
 
- #### [Option 1.3 Selenium + mitmproxy:](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping%20/Option_1.3)
+ #### Option 1.3 [Selenium + mitmproxy:](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping%20/Option_1.3)
 ```mermaid
 graph TD;
     B[Run mitmdump + interception script];
