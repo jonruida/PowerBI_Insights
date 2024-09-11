@@ -97,7 +97,7 @@ graph TD;
 - **Status**: 
   - <span style="color:orange"> PENDING </span>
 
-#### Option 3: Selenimum (PYPI with package)
+#### Option 3: [Selenimum (PYPI with package)](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_3/Selenimum_PYPI)
 
 - **Sources**:
   - [PYPI](https://pypi.org/project/PBI-SELENIUM/#description)
