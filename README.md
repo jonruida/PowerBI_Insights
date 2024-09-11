@@ -60,33 +60,22 @@ graph TD;
   - Improves the Option 1 by standarrdizing the format, still has some issues uncompressing GZIP due to single \ being recognized as double\\.
  
 
-#### Option 2: Python Requests
+#### Option 2: [Python Requests](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Data_Extraction/Web_Scraping)
+
 - **Sources**:
   - [Github repo](https://github.com/kulwinderkk/webscraping/blob/main/Improved%20script%20for%20PowerBI%20Webscraping.ipynb)
-  - [UN Power BI Dashboard](https://www.un.org/techenvoy/global-digital-compact)
-  - [json_to_csv.py](link-to-json-to-csv)
   - [Prefect Documentation](https://docs.prefect.io/)
 
 - **Technologies/Strategies**:
   - Use Python with Prefect for orchestrating the ETL process
   - Scrape data from the UN Power BI dashboard using the provided script
-  - Extract data from multiple pages and merge it into a single DataFrame
-  - Save the scraped data to a CSV file
-  - **Status**: In Progress
+  - Based on a payload
 
 - **Status**: 
   - <span style="color:orange">In Progress</span>
 
 - **Report**:
-  - The script efficiently scrapes data from the UN Power BI dashboard, extracting and merging data from multiple pages.
-  - The process involves using Prefect for task orchestration and Python requests for data retrieval.
-  - The script enhances scraping efficiency and reduces execution time from about 1 hour to under 1 minute.
-
-- **Problem-Solving**:
-  - Improved script performance and handling of multi-page data extraction.
-  - Potential issues include handling dynamic data formats and ensuring compatibility with different data sources.
-
-
+  - Needs a custom payload for each dashboard, so it's necessary a method for create custom payloads automaticaly.
 
 
 ### Native API Connectivity Approach
