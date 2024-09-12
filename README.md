@@ -61,6 +61,7 @@ graph TD;
 ```mermaid
 graph TD;
     B[Run mitmdump + interception script];
+    B --> D
     B --> C[Run Selenium Script];
     C --> D[Capture HTTP Requests];
     
