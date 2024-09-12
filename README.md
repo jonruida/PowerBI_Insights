@@ -11,7 +11,6 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 graph TD;
     B[Run mitmdump];
     B --> C[Run Selenium Script];
-    B --> D[Run Selenium Script];
     C --> D[Capture HTTP Requests];
     D --> E[Process Captured Data];
     
@@ -35,11 +34,11 @@ graph TD;
 ### Option 1.2 [Selenium + mitmproxy](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_1.2):
 ```mermaid
 graph TD;
-    A[Run mitmdump];
-    A --> B[Run Selenium Script];
-    B --> C[Format Dumpfile Script];
-    C --> D[Capture HTTP Requests];
-    D --> E[Process Captured Data];
+    A[Mitmdump];
+    A --> B[Selenium WEbDriver ];
+    C --> D[Capture HTTP Responses];
+    B --> C[Format Dumpfile];
+    D --> E[Uncompress GZIP];
 
 ```
 - **Sources**:
