@@ -1,4 +1,4 @@
-# Selenium Automation Script
+# [Selenium Automation Script](https://pypi.org/project/PBI-SELENIUM/#description)
 
 This Python script utilizes Selenium for web automation to perform tasks related to logging in, updating workspace reports, and downloading reports.
 
