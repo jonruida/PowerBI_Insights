@@ -36,8 +36,8 @@ graph TD;
 graph TD;
     A[Mitmdump];
     A --> B[Selenium WEbDriver ];
-    C --> D[Capture HTTP Responses];
-    B --> C[Format Dumpfile];
+    A --> C[Capture HTTP Responses];
+    C --> D[Format Dumpfile];
     D --> E[Uncompress GZIP];
 
 ```
