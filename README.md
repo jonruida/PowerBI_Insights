@@ -11,6 +11,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 graph TD;
     B[Run mitmdump];
     B --> C[Run Selenium Script];
+    B --> D[Run Selenium Script];
     C --> D[Capture HTTP Requests];
     D --> E[Process Captured Data];
     
