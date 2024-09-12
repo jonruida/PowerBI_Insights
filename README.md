@@ -6,7 +6,7 @@ Automatic insight generator from PowerBI web Reports and Dashboards
 ## Data Extraction Approaches
 
 ### Web Scraping and Interception Approach
-#### Option 1.1 [Selenium + mitmproxy:](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping%20/Option_1.1)
+### Option 1.1 [Selenium + mitmproxy:](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping%20/Option_1.1)
 ```mermaid
 graph TD;
     B[Run mitmdump];
@@ -31,7 +31,7 @@ graph TD;
 - **Problem Solving**:
   - <span style="color:orange">Not working:</span> Use --anticomp option while using mitmdump comand [link](https://discourse.mitmproxy.org/t/get-raw-unzipped-html-when-export-using-mitmdump-w-filename-zlib/135/2)
 
-#### Option 1.2 [Selenium + mitmproxy](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_1.2):
+### Option 1.2 [Selenium + mitmproxy](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_1.2):
 ```mermaid
 graph TD;
     A[Run mitmdump];
@@ -56,7 +56,7 @@ graph TD;
 - **Report**:
   - Improves the Option 1 by standarrdizing the format, still has some issues uncompressing GZIP due to single \ being recognized as double\\.
 
- #### Option 1.3 [Selenium + mitmproxy:](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping%20/Option_1.3)
+ ### Option 1.3 [Selenium + mitmproxy:](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping%20/Option_1.3)
 ```mermaid
 graph TD;
     B[Run mitmdump + interception script];
@@ -79,7 +79,7 @@ graph TD;
   - Improves option 1.1 and option 1.2 by including a catpure script along with mitmdump running command
   - Solves data format and compression problems
 
-#### Option 2: [Python Requests](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_2)
+### Option 2: [Python Requests](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_2)
 
 - **Sources**:
   - [Github repo](https://github.com/kulwinderkk/webscraping/blob/main/Improved%20script%20for%20PowerBI%20Webscraping.ipynb)
@@ -97,7 +97,7 @@ graph TD;
 - **Status**: 
   - <span style="color:orange"> PENDING </span>
 
-#### Option 3: [Selenimum (PYPI with package)](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_3/Selenimum_PYPI)
+### Option 3: [Selenimum (PYPI with package)](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Web_Scraping/Option_3/Selenimum_PYPI)
 
 - **Sources**:
   - [PYPI](https://pypi.org/project/PBI-SELENIUM/#description)
@@ -120,7 +120,7 @@ graph TD;
  -  [Github Available solutions for embedding Power BI content Repo](https://github.com/microsoft/PowerBI-Developer-Samples)
  -  Get Access Token Code, [Microfost Community Forum](https://community.fabric.microsoft.com/t5/Developer/REST-API-Get-Access-Token/m-p/1895937)
 
-#### Option 1: [PowerShell Module `MicrosoftPowerBIMgmt`](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Native_API_Con/Option_1) 
+### Option 1: [PowerShell Module `MicrosoftPowerBIMgmt`](https://github.com/jonruida/PowerBI_Insights/tree/main/Data_Extraction/Native_API_Con/Option_1) 
 - **Sources**:
   - [Article c-sharpcorner](https://www.c-sharpcorner.com/article/install-power-bi-powershell-in-your-windows-machine/)
   - [Module doc](https://learn.microsoft.com/en-us/powershell/module/microsoftpowerbimgmt.reports/get-powerbireport?view=powerbi-ps)
@@ -137,7 +137,7 @@ graph TD;
     ![Captura](https://github.com/jonruida/PowerBI_Insights/blob/main/assets/image.png)
   - Requires credentials, and it seems necessary to create an [Azure App](https://learn.microsoft.com/en-us/rest/api/power-bi/) for this. Gena is developed in Azure, nayways don't know if it's possible to use its credentials. 
 
-#### Option 2: REST API Connectivity
+### Option 2: REST API Connectivity
 - **Sources**:
   -[Blog Coupler](https://blog.coupler.io/power-bi-rest-api/)  
 - **Technologies/Strategies**:
@@ -152,7 +152,7 @@ graph TD;
   - Requires creating an application in  [Azure App](https://learn.microsoft.com/en-us/rest/api/power-bi/) to obtain access tokens.
   - The REST API documentation provides detailed examples of how to make the necessary requests.
 
-#### Option 3: DirectQuery Connectivity
+### Option 3: DirectQuery Connectivity
 
 - **Technologies/Strategies**:
   - Configure DirectQuery to connect directly to data sources
@@ -164,7 +164,7 @@ graph TD;
 - **Report**:
   - Requires configuration of data sources in PowerBI.
 
-#### Option 4: Export Data
+### Option 4: Export Data
 - **Sorces**:
   - [Forum](https://stackoverflow.com/questions/52079733/data-scraping-from-published-power-bi-visual)
 - **Technologies/Strategies**:
@@ -179,7 +179,7 @@ graph TD;
   - The Export Data feature allows you to export data from Power BI visualizations to Excel or CSV files.
   - Requires configuration of Power BI to grant export permissions.
 
-#### Option 5: Power BI in Jupyter Notebooks
+### Option 5: Power BI in Jupyter Notebooks
 - **Sources**:
   - [Jupiter Notebook Github](https://github.com/microsoft/powerbi-jupyter)
   - [PyPI](https://pypi.org/search/?q=Power+BI+report+demo.ipynb)
@@ -196,7 +196,7 @@ graph TD;
   - Requires authentication via Azure AD or embed tokens to access Power BI reports.
   - The [documentation](https://github.com/microsoft/powerbi-jupyter/blob/main/DOCUMENTATION.md) provides detailed steps on how to install and use the library.
 
-#### Option 6: Scanner API
+### Option 6: Scanner API
 - **Sources**:
   - Example (https://www.dataxbi.com/blog/2021/08/23/probando-scanner-api-power-bi/)
   - [Microsoft Doc](https://learn.microsoft.com/en-us/fabric/governance/metadata-scanning-overview)
